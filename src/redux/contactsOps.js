@@ -14,25 +14,25 @@ export const fetchContacts = createAsyncThunk('contacts/fetchAll',
     },
 );
 
-// export const addContact = createAsyncThunk('contacts/addContact',
-//     async (newContact, thukAPI) => {
-//         try {
-//             const { data } = await axios.post('/contacts', newContact);           
-//             return { ...data, id: Number(data.id) };
-//         } catch (error) {
-//             return thukAPI.rejectWithValue(error.message);
-//         }
-//     },
-// );
+export const addContact = createAsyncThunk('contacts/addContact',
+    async (newContact, thukAPI) => {
+        try {
+            const { data } = await axios.post('/contacts', newContact);           
+            return { ...data, id: Number(data.id) };
+        } catch (error) {
+            return thukAPI.rejectWithValue(error.message);
+        }
+    },
+);
 
-// export const deleteContact = createAsyncThunk('contacts/deleteContact',
-//     async (contactId, thukAPI) => {
-//         try {
-//             const { data } = await axios.delete(`/contacts/${contactId}`);           
-//             return data;
-//         } catch (error) {
-//             return thukAPI.rejectWithValue(error.message);
-//         }
-//     },
-// );
+export const deleteContact = createAsyncThunk('contacts/deleteContact',
+    async (contactId, thukAPI) => {
+        try {
+            const { data } = await axios.delete(`/contacts/${contactId}`);
+            return data;
+        } catch (error) {
+            return thukAPI.rejectWithValue(error.message);
+        }
+    },
+);
 
