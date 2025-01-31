@@ -73,6 +73,7 @@ export const selectFilteredContacts = createSelector([selectContact, selectFilte
     });
 
 export const contactsReducer = contactsSlice.reducer;
+export const filterReducer = contactsSlice.reducer;
 
 
 
