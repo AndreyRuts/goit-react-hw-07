@@ -1,0 +1,21 @@
+.listItem{
+    display: flex;
+    gap: 52px;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 320px;
+    height: 90px;
+    padding-top: 16px;
+    padding-left: 30px;
+}
+
+.delBtn{
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+    margin-top: 14px;
+}
+
+.text{
+    font-size: 20px;
+}
