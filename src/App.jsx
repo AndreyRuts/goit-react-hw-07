@@ -11,7 +11,7 @@ const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchContacts());
+        dispatch(fetchContacts());   
     }, [dispatch]);
 
     const isError = useSelector(selectError);
